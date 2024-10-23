@@ -1,0 +1,164 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.login-center {
+  margin: 0;
+  margin-top: 500px;
+  display: flex;
+  display: block;
+  justify-content: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.register-center{
+  margin: 0;
+  margin-top: 500px;
+  display: flex;
+  display: block;
+  justify-content: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-evenly;
+  color: yellow;
+  margin: auto;
+  width: 1280px;
+}
+
+.buttons{
+  color: white;
+}
+
+.line {
+  margin: auto;
+  width: 1280px;
+  height: 10px;
+  background-color: red;
+}
+
+.home-header {
+  margin-top: 50px;
+}
+
+.home-post-box-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.home-post-box{
+  width: auto;
+  font-size: 20px;
+  border: rgb(43, 116, 152) solid 2px;
+  margin: 20px;
+  margin-top: 50px;
+}
+
+.home-post-box-br{
+  width: auto;
+  font-size: 20px;
+  border: rgb(97, 179, 80) solid 2px;
+  margin: 20px;
+  margin-top: 50px;
+}
+
+.home-bt{
+  margin: 50px;
+}
+
+.home-user-font{
+  font-family: Jazz LET, fantasy;
+  font-size: 30px;
+}
+
+.home-font{
+  font-family: OCR A Std, monospace;
+}
+
+.new-post-box{
+  margin: auto;
+  width: 400px;
+  height: auto;
+  margin-top: 30px;
+  border: orange solid 1px;
+}
+
+.update-post-box{
+  margin: auto;
+  width: 400px;
+  height: auto;
+  margin-top: 30px;
+  border: rgb(34, 214, 49) solid 2px;
+}
+
+.details-post-box{
+  margin: auto;
+  width: 400px;
+  height: auto;
+  margin-top: 30px;
+  border: rgb(12, 34, 232) solid 3px;
+}
+
+.details-page-name{
+  font-family: fantasy;
+}
+
+.required-text{
+  color: red;
+}
+
+.nav-header-name{
+  font-family: Marker Felt, fantasy;
+}
+
+
+.page-name{
+  font-family: Impact, fantasy;
+}
+
+.update-page-name{
+  font-family: Chalkduster, fantasy;
+}
