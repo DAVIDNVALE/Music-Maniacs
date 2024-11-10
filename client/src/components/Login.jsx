@@ -2,7 +2,7 @@ import React, { useState, useContext } from "react";
 import { Link, useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import { userContext } from '../context/userContext'
-import logo from '../assets/music-background.jpeg'
+import logo from '../assets/music-logo.jpeg'
 
 const Login = (props) => {
 
@@ -30,6 +30,7 @@ const Login = (props) => {
     return (
         <div>
             <div className="login-nav"> 
+            <img className='logo' src={logo} alt="Light Bulb Logo" />
                  <h1>Music Maniacs Login</h1>
             </div>
 

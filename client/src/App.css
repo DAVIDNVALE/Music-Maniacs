@@ -8,6 +8,13 @@
   max-width: 1280px;
   margin: 0 auto;
   text-align: center;
+  background-image: url('./assets/music-background.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: flex-start; /* Align at the top */
 }
 
 
