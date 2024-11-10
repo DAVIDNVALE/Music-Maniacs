@@ -2,6 +2,7 @@ import React, { useState, useContext } from "react";
 import { Link, useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import { userContext } from '../context/userContext'
+import logo from '../assets/music-background.jpeg'
 
 const Login = (props) => {
 
@@ -27,19 +28,24 @@ const Login = (props) => {
     }
 
     return (
-        <form onSubmit={submitHandler} className="login-center">
-            <h1>Music Maniacs Login</h1>
-            <div>
-                <label>Email</label>
-                <input type="email" onChange={(e) => setEmail(e.target.value)} />
+        <div>
+            <div className="login-nav"> 
+                 <h1>Music Maniacs Login</h1>
             </div>
-            <div>
-                <label>Password</label>
-                <input type="password" onChange={(e) => setPassword(e.target.value)} />
-            </div>
-            <button>Login</button>
-            <Link to="/register">Don't have an account?</Link>
-        </form>
+
+            <form onSubmit={submitHandler} className="login-center" >
+                <div className="login-email">
+                    <label>Email</label>
+                    <input type="email" onChange={(e) => setEmail(e.target.value)} />
+                </div>
+                <div>
+                    <label>Password</label>
+                    <input type="password" onChange={(e) => setPassword(e.target.value)} />
+                </div>
+                <button>Login</button>
+                <Link to="/register">Don't have an account?</Link>
+            </form>
+        </div>
     )}
 
 

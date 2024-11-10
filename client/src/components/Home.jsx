@@ -54,7 +54,7 @@ const Home = (props) => {
                         <div>
                         <p className='home-user-font'>{user.username}'s Post</p>
                         </div>
-                        <p className='home-font text-success' >Song Title: {song.title}</p>
+                        <p className='home-font' >Song Title: {song.title}</p>
                         <p className='home-font'>Artist: {song.artist}</p>
                         <p className='home-font'>Year Released: {song.yearReleased}</p>
                         <div className='home-post-box-br'>
