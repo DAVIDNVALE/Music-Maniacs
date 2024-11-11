@@ -30,8 +30,12 @@ const Login = (props) => {
     return (
         <div>
             <div className="login-nav"> 
+                <div className="login-nav-logo">
             <img className='logo' src={logo} alt="Light Bulb Logo" />
+                </div>
+                <div className="login-nav-title">
                  <h1>Music Maniacs Login</h1>
+                </div>
             </div>
 
             <form onSubmit={submitHandler} className="login-center" >
