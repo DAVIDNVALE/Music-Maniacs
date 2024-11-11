@@ -24,6 +24,20 @@ h1, h2, h3, h4, h5, p, label {
   font-family: 'Montserrat';
 }
 
+label{
+  font-size: 25px;
+  margin: 5px;
+}
+
+input{
+  width: 200px;
+  height: 20px;
+}
+
+button{
+  margin: 10px;
+}
+
 
 .login-nav{
   margin-top: 50px;
@@ -71,23 +85,12 @@ h1, h2, h3, h4, h5, p, label {
 .nav {
   display: flex;
   justify-content: space-evenly;
-  color: black;
-  /* background-color: white; */
-  border-style: solid;
-  border-color: rgb(219, 90, 90);
   width: 1280px;
 }
 
 .buttons{
   color: white;
 }
-
-/* .line {
-  margin: auto;
-  width: 1280px;
-  height: 10px;
-  background-color: red;
-} */
 
 .home-post-box-container{
   display: flex;
@@ -97,7 +100,6 @@ h1, h2, h3, h4, h5, p, label {
 .home-post-box{
   width: auto;
   font-size: 20px;
-  border: rgb(167, 178, 184) solid 2px;
   margin: 20px;
   margin-top: 50px;
 }
@@ -113,21 +115,11 @@ h1, h2, h3, h4, h5, p, label {
   margin: 50px;
 }
 
-/* .home-user-font{
-  font-family: Jazz LET, fantasy;
-  font-size: 30px;
-}
-
-.home-font{
-  font-family: OCR A Std, monospace;
-} */
-
 .new-post-box{
   margin: auto;
   width: 400px;
   height: auto;
   margin-top: 30px;
-  border: orange solid 1px;
 }
 
 .update-post-box{
@@ -135,7 +127,6 @@ h1, h2, h3, h4, h5, p, label {
   width: 400px;
   height: auto;
   margin-top: 30px;
-  border: rgb(34, 214, 49) solid 2px;
 }
 
 .details-post-box{
@@ -143,26 +134,8 @@ h1, h2, h3, h4, h5, p, label {
   width: 400px;
   height: auto;
   margin-top: 30px;
-  border: rgb(12, 34, 232) solid 3px;
 }
-
-/* .details-page-name{
-  font-family: fantasy;
-} */
 
 .required-text{
   color: red;
 }
-/* 
-.nav-header-name{
-  font-family: Marker Felt, fantasy;
-}
-
-
-.page-name{
-  font-family: Impact, fantasy;
-}
-
-.update-page-name{
-  font-family: Chalkduster, fantasy;
-} */

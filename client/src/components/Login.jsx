@@ -34,11 +34,12 @@ const Login = (props) => {
             <img className='logo' src={logo} alt="Light Bulb Logo" />
                 </div>
                 <div className="login-nav-title">
-                 <h1>Music Maniacs Login</h1>
+                 <h1>Music Maniacs</h1>
                 </div>
             </div>
 
             <form onSubmit={submitHandler} className="login-center" >
+            <h1>Login</h1>
                 <div className="login-email">
                     <label>Email</label>
                     <input type="email" onChange={(e) => setEmail(e.target.value)} />
