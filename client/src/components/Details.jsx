@@ -44,7 +44,7 @@ const Details = (props) => {
             <div className='nav'>
             <button><Link to={'/home'} className='buttons'>Home</Link></button>
             <h1 className='nav-header-name'>Music Maniac {user.username}</h1>
-            <button onClick={logout}>Logout</button>
+            <button><Link to={'/'} className='buttons'>Logout</Link></button>
             </div>
 
             <div className='line'><h1></h1></div>

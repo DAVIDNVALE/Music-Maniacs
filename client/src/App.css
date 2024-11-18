@@ -20,6 +20,11 @@ body {
   background-repeat: no-repeat;
 }
 
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
 h1, h2, h3, h4, h5, p, label {
   font-family: 'Montserrat';
 }
@@ -38,104 +43,298 @@ button{
   margin: 10px;
 }
 
+.required-text{
+  color: red;
+}
 
-.login-nav{
-  margin-top: 50px;
+
+
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: center;
-  width: 1280px;
-  height: 100px;
+  align-items: center;
+  height: 100vh;
+  box-sizing: border-box;
 }
 
-.login-nav-logo{
+.login-nav {
   display: flex;
-  margin-right: 20px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
 }
 
-.login-nav-title{
-  color: white;
-  display: flex;
-  align-items: center; 
+.login-nav-logo img {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
 }
 
-.login-email{
-  margin: 20px;
+.login-nav-title h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  text-align: center;
 }
 
 .login-center {
-  margin: 0;
-  margin-top: 500px;
-  display: flex;
-  display: block;
-  justify-content: center;
-  min-width: 320px;
-  min-height: 100vh;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
 }
 
-.register-center{
-  margin: 0;
-  margin-top: 500px;
-  display: flex;
-  display: block;
-  justify-content: center;
-  min-width: 320px;
-  min-height: 100vh;
+.login-center h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
 }
+
+.login-email, .login-password {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.login-email label, .login-password label {
+  display: block;
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+input[type="email"], input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+
+input[type="email"]:focus, input[type="password"]:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+
+a {
+  display: block;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #007BFF;
+  text-decoration: none;
+}
+
+
+@media (max-width: 600px) {
+  .login-nav {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .login-nav-logo img {
+      height: 40px;
+      width: 40px;
+  }
+}
+
+
+
+
+
+
+
+.register-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+.register-nav-logo img {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+}
+
+.register-nav-title h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  text-align: center;
+}
+
+.register-center {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.register-center h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.register-center div {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.register-center label {
+  display: block;
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+
+
+
 
 .nav {
   display: flex;
-  justify-content: space-evenly;
-  width: 1280px;
-}
-
-.buttons{
-  color: white;
-}
-
-.home-post-box-container{
-  display: flex;
   justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  width: 100%;
+  padding: 15px 30px;
+  box-sizing: border-box;
 }
 
-.home-post-box{
-  width: auto;
-  font-size: 20px;
-  margin: 20px;
-  margin-top: 50px;
+.nav-header-name {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
-.home-post-box-br{
-  width: auto;
-  font-size: 20px;
-  margin: 20px;
-  margin-top: 50px;
+.home-post-box {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px 0;
+  width: 80%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
-.home-bt{
-  margin: 50px;
+.home-post-box:hover {
+  transform: scale(1.03);
 }
 
-.new-post-box{
-  margin: auto;
-  width: 400px;
-  height: auto;
-  margin-top: 30px;
+.home-user-font {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #4CAF50;
 }
 
-.update-post-box{
-  margin: auto;
-  width: 400px;
-  height: auto;
-  margin-top: 30px;
+.home-font {
+  font-size: 1rem;
+  color: #555;
+  margin: 10px 0;
 }
 
-.details-post-box{
-  margin: auto;
-  width: 400px;
-  height: auto;
-  margin-top: 30px;
+.home-post-box-br {
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  padding: 10px;
+  font-style: italic;
+  color: #666;
+  margin-bottom: 15px;
 }
 
-.required-text{
-  color: red;
+.home-post-box a {
+  color: #007BFF;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.home-bt {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  margin: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.home-post-box {
+  width: 90%;
+}
+
+.home-font {
+  font-size: 0.9rem;
+}
+
+.home-user-font {
+  font-size: 1rem;
+}
+
+.nav-header-name {
+  font-size: 1rem;
+}
+
+.home-bt {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px; /* Rounded button edges */
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.home-bt:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
 }

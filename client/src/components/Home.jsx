@@ -39,14 +39,10 @@ const Home = (props) => {
             <div className='nav'>
             <button><Link to={'/post'} className='buttons'>Add Post</Link></button>
             <h1 className='nav-header-name'>Music Maniac {user.username}</h1>
-            <button onClick={logout}>Logout</button>
+            <button><Link to={'/'} className='buttons'>Logout</Link></button>
             </div>
 
-            <div className='line'><h1></h1></div>
-
-            <h1 className='page-name'>Maniacs Post</h1>
-
-
+            <h1>Maniacs Post</h1>
 
             {
                 songs.map((song) => (

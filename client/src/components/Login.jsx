@@ -34,7 +34,7 @@ const Login = (props) => {
             <img className='logo' src={logo} alt="Light Bulb Logo" />
                 </div>
                 <div className="login-nav-title">
-                 <h1>Music Maniacs</h1>
+                <h1>Music Maniacs</h1>
                 </div>
             </div>
 
@@ -44,7 +44,7 @@ const Login = (props) => {
                     <label>Email</label>
                     <input type="email" onChange={(e) => setEmail(e.target.value)} />
                 </div>
-                <div>
+                <div className="login-password">
                     <label>Password</label>
                     <input type="password" onChange={(e) => setPassword(e.target.value)} />
                 </div>

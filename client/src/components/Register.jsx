@@ -30,13 +30,12 @@ const Register = (props) => {
     
     return (
         <div>
-
             <div className="login-nav"> 
                 <div className="login-nav-logo">
-                    <img className='logo' src={logo} alt="Light Bulb Logo" />
+            <img className='logo' src={logo} alt="Light Bulb Logo" />
                 </div>
                 <div className="login-nav-title">
-                     <h1>Music Maniacs</h1>
+                <h1>Music Maniacs</h1>
                 </div>
             </div>
 
