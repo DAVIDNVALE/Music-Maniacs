@@ -323,7 +323,7 @@ input[type="text"], input[type="email"], input[type="password"] {
     background-color: #4CAF50;
     color: #fff;
     padding: 10px 20px;
-    border-radius: 20px; /* Rounded button edges */
+    border-radius: 20px; 
     border: none;
     cursor: pointer;
     margin: 5px;
