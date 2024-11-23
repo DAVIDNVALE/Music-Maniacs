@@ -46,7 +46,7 @@ const Post = () => {
     return (
         <div className="container mt-5">
             {/* Navbar */}
-            <nav className="navbar navbar-expand-lg navbar-light bg-light mb-4">
+            <nav className="navbar navbar-expand-lg navbar-light  mb-4">
                 <div className="container-fluid">
                     <Link to="/home" className="btn btn-primary me-2">Home</Link>
                     <h1 className="navbar-brand">Music Maniac {user.username}</h1>
