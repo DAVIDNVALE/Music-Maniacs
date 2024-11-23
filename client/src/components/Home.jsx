@@ -1,9 +1,7 @@
-import axios from 'axios'
+import axios from 'axios';
 import React, { useContext, useState, useEffect } from "react";
-import { Link, useNavigate } from 'react-router-dom'
-import { userContext } from '../context/userContext'
-import 'bootstrap/dist/css/bootstrap.min.css';
-
+import { Link, useNavigate } from 'react-router-dom';
+import { userContext } from '../context/userContext';
 
 const Home = () => {
     const [songs, setSongs] = useState([]);
@@ -31,48 +29,43 @@ const Home = () => {
     };
 
     return (
-        <div className="container mt-4">
-            {/* Navbar */}
-            <nav className="navbar navbar-expand-lg navbar-light bg-light mb-4">
-                <div className="container-fluid">
-                    <button className="btn btn-primary me-2">
-                        <Link to={'/post'} className="text-white text-decoration-none text-align">Add Post</Link>
+        <div className="home-container">
+            <nav className="navbar">
+                <div className="navbar-content">
+                    <button className="add-post-button">
+                        <Link to={'/post'} className="link">Add Post</Link>
                     </button>
-                    <h1 className="navbar-brand">Music Maniac {user.username}</h1>
-                    <button className="btn btn-danger">
-                        <Link to={'/'} onClick={logout} className="text-white text-decoration-none">Logout</Link>
+                    <h1 className="navbar-title">Music Maniac {user.username}</h1>
+                    <button className="logout-button" onClick={logout}>
+                        Logout
                     </button>
                 </div>
             </nav>
 
-            {/* Main Content */}
-            <h2 className="mb-4">Maniac's Posts</h2>
+            <h2 className="posts-heading">Maniac's Posts</h2>
 
-            <div className="row">
+            <div className="songs-container">
                 {songs.map((song) => (
-                    <div key={song._id} className="col-md-4 mb-4">
-                        <div className="card">
-                            <div className="card-body">
-                                <h5 className="card-title">{song.title}</h5>
-                                <h6 className="card-subtitle mb-2 text-muted">Artist: {song.artist}</h6>
-                                <p className="card-text">Year Released: {song.yearReleased}</p>
-                                <blockquote className="blockquote">
-                                    <p className="mb-0">"{song.background}"</p>
-                                </blockquote>
-                                <p>
-                                    <strong>Link:</strong> 
-                                    <a href={song.link} target="_blank" rel="noopener noreferrer">{song.link}</a>
-                                </p>
+                    <div key={song._id} className="song-card">
+                        <div className="card-body">
+                            <h5 className="song-title">{song.title}</h5>
+                            <h6 className="song-artist">Artist: {song.artist}</h6>
+                            <p className="song-year">Year Released: {song.yearReleased}</p>
+                            <blockquote className="song-background">
+                                <p>"{song.background}"</p>
+                            </blockquote>
+                            <p className="song-link">
+                                <strong>Link:</strong> 
+                                <a href={song.link} target="_blank" rel="noopener noreferrer">{song.link}</a>
+                            </p>
 
-                                {/* Edit and Details Buttons */}
-                                <div className="d-flex justify-content-between">
-                                    <button className="btn btn-warning">
-                                        <Link to={`/update/song/${song._id}`} className="text-white text-decoration-none">Edit Post</Link>
-                                    </button>
-                                    <button className="btn btn-info">
-                                        <Link to={`/details/song/${song._id}`} className="text-white text-decoration-none">Details</Link>
-                                    </button>
-                                </div>
+                            <div className="action-buttons">
+                                <button className="edit-button">
+                                    <Link to={`/update/song/${song._id}`} className="link">Edit Post</Link>
+                                </button>
+                                <button className="details-button">
+                                    <Link to={`/details/song/${song._id}`} className="link">Details</Link>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -83,3 +76,4 @@ const Home = () => {
 };
 
 export default Home;
+

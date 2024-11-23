@@ -56,7 +56,7 @@ const Post = () => {
             <h1 className="mb-4">Create a New Maniac Post</h1>
 
             <form onSubmit={submitHandler} className="bg-light p-4 rounded shadow-sm">
-                {/* Song Title */}
+                
                 <div className="mb-3">
                     <label htmlFor="title" className="form-label">Song Title</label>
                     <input
@@ -70,7 +70,7 @@ const Post = () => {
                     {errors.title && <div className="invalid-feedback">{errors.title.message}</div>}
                 </div>
 
-                {/* Artist */}
+                
                 <div className="mb-3">
                     <label htmlFor="artist" className="form-label">Artist</label>
                     <input
@@ -84,7 +84,7 @@ const Post = () => {
                     {errors.artist && <div className="invalid-feedback">{errors.artist.message}</div>}
                 </div>
 
-                {/* Year Released */}
+                
                 <div className="mb-3">
                     <label htmlFor="yearReleased" className="form-label">Year Released</label>
                     <input
@@ -98,7 +98,7 @@ const Post = () => {
                     {errors.yearReleased && <div className="invalid-feedback">{errors.yearReleased.message}</div>}
                 </div>
 
-                {/* Background */}
+                
                 <div className="mb-3">
                     <label htmlFor="background" className="form-label">Background</label>
                     <textarea
@@ -112,7 +112,7 @@ const Post = () => {
                     {errors.background && <div className="invalid-feedback">{errors.background.message}</div>}
                 </div>
 
-                {/* Link */}
+                
                 <div className="mb-3">
                     <label htmlFor="link" className="form-label">Link</label>
                     <input
@@ -126,7 +126,7 @@ const Post = () => {
                     {errors.link && <div className="invalid-feedback">{errors.link.message}</div>}
                 </div>
 
-                {/* Submit Button */}
+                
                 <div className="d-flex justify-content-end">
                     <button type="submit" className="btn btn-success">Create Post</button>
                 </div>

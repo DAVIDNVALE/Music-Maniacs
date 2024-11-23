@@ -301,3 +301,169 @@ a {
   background-color: #45a049;
   transform: scale(1.05);
 }
+
+/* General container styles */
+.home-container {
+  font-family: 'Arial', sans-serif;
+  margin: 20px;
+}
+
+/* Navbar styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: #282c34; */
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+}
+
+.navbar-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #fff;
+  margin: 0;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.add-post-button, .logout-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-left: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.add-post-button:hover, .logout-button:hover {
+  background-color: #45a049;
+}
+
+/* Post heading styles */
+.posts-heading {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Song container styles */
+.songs-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.song-card {
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.song-card:hover {
+  transform: translateY(-10px);
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.song-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.song-artist, .song-year {
+  color: #888;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.song-background {
+  font-style: italic;
+  color: #555;
+}
+
+.song-link {
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+.song-link a {
+  color: #2196f3;
+  text-decoration: none;
+}
+
+.song-link a:hover {
+  text-decoration: underline;
+}
+
+/* Action buttons styles */
+.action-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.edit-button, .details-button {
+  background-color: #ff9800;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+.link {
+  margin-top: 15px;
+}
+
+.details-button {
+  background-color: #2196f3;
+}
+
+.edit-button:hover {
+  background-color: #fb8c00;
+}
+
+.details-button:hover {
+  background-color: #1976d2;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .navbar-content {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .add-post-button, .logout-button {
+      width: 100%;
+      margin-top: 10px;
+  }
+
+  .songs-container {
+      grid-template-columns: 1fr;
+  }
+}
