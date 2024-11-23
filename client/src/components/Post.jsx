@@ -44,17 +44,14 @@ const Post = () => {
     };
 
     return (
-        <div className="container mt-5">
-            {/* Navbar */}
-            <nav className="navbar navbar-expand-lg navbar-light  mb-4">
-                <div className="container-fluid">
-                    <Link to="/home" className="btn btn-primary me-2">Home</Link>
-                    <h1 className="navbar-brand">Music Maniac {user.username}</h1>
-                    <button className="btn btn-danger">
-                        <Link to="/" onClick={logout} className="text-white text-decoration-none">Logout</Link>
-                    </button>
-                </div>
-            </nav>
+        <div>
+            <div className='nav'>
+                <button><Link to='/home' className="buttons">Home</Link></button>
+                <h1 className="nav-header-name">Music Maniac {user.username}</h1>
+                <button onClick={logout} className='buttons'>Logout</button>
+            </div>
+
+            <div className='line'><h1></h1></div>
 
             <h1 className="mb-4">Create a New Maniac Post</h1>
 
@@ -139,3 +136,4 @@ const Post = () => {
 };
 
 export default Post;
+
