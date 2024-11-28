@@ -48,6 +48,9 @@ const Home = () => {
                 {songs.map((song) => (
                     <div key={song._id} className="song-card">
                         <div className="card-body">
+                            <h6 className="username-post-heading">
+                                <span>{user.username}'s</span> Post
+                            </h6>
                             <h5 className="song-title">{song.title}</h5>
                             <h6 className="song-artist">Artist: {song.artist}</h6>
                             <p className="song-year">Year Released: {song.yearReleased}</p>
