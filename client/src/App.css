@@ -302,18 +302,18 @@ a {
   transform: scale(1.05);
 }
 
-/* General container styles */
+
 .home-container {
   font-family: 'Arial', sans-serif;
   margin: 20px;
 }
 
-/* Navbar styling */
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* background-color: #282c34; */
+  background-color: #282c34;
   padding: 10px 20px;
   border-radius: 8px;
   margin-bottom: 20px;
@@ -352,14 +352,14 @@ a {
   background-color: #45a049;
 }
 
-/* Post heading styles */
+
 .posts-heading {
   font-size: 1.6rem;
   margin-bottom: 20px;
   color: #333;
 }
 
-/* Song container styles */
+
 .songs-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -416,7 +416,6 @@ a {
   text-decoration: underline;
 }
 
-/* Action buttons styles */
 .action-buttons {
   display: flex;
   justify-content: space-between;
@@ -433,10 +432,12 @@ a {
   font-size: 0.9rem;
   transition: background-color 0.3s ease;
   margin: 5px;
+
 }
 
 .link {
-  margin-top: 15px;
+  margin: auto;
+  color: white;
 }
 
 .details-button {
@@ -451,7 +452,7 @@ a {
   background-color: #1976d2;
 }
 
-/* Mobile responsiveness */
+
 @media (max-width: 768px) {
   .navbar-content {
       flex-direction: column;
