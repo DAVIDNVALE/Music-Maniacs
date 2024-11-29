@@ -45,15 +45,19 @@ const Post = () => {
 
     return (
         <div>
-            <div className='nav'>
-                <button><Link to='/home' className="buttons">Home</Link></button>
-                <h1 className="nav-header-name">Music Maniac {user.username}</h1>
-                <button onClick={logout} className='buttons'>Logout</button>
-            </div>
+            <nav className="navbar">
+                <div className="navbar-content">
+                    <button className="add-post-button">
+                        <Link to={'/home'} className="link">Home</Link>
+                    </button>
+                    <h1 className="navbar-title">Music Maniac {user.username}</h1>
+                    <button className="logout-button" onClick={logout}>
+                        Logout
+                    </button>
+                </div>
+            </nav>
 
-            <div className='line'><h1></h1></div>
-
-            <h1 className="mb-4">Create a New Maniac Post</h1>
+            <h1 className="posts-heading">Create a New Maniac Post</h1>
 
             <form onSubmit={submitHandler} className="bg-light p-4 rounded shadow-sm">
                 

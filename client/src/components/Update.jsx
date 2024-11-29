@@ -65,21 +65,23 @@ const Update = () => {
 
     return (
         <div className="container mt-5">
-            {/* Navbar */}
-            <nav className="navbar navbar-expand-lg navbar-light bg-light mb-4">
-                <div className="container-fluid">
-                    <Link to="/home" className="btn btn-primary me-2">Home</Link>
-                    <h1 className="navbar-brand">Music Maniac {user.username}</h1>
-                    <button className="btn btn-danger">
-                        <Link to="/" onClick={logout} className="text-white text-decoration-none">Logout</Link>
+            
+            <nav className="navbar">
+                <div className="navbar-content">
+                    <button className="add-post-button">
+                        <Link to={'/home'} className="link">Home</Link>
+                    </button>
+                    <h1 className="navbar-title">Music Maniac {user.username}</h1>
+                    <button className="logout-button" onClick={logout}>
+                        Logout
                     </button>
                 </div>
             </nav>
 
-            <h1 className="text-center mb-4">Update Maniac Post</h1>
+            <h1 className="posts-heading">Update Maniac Post</h1>
 
             <form onSubmit={submitHandler} className="bg-light p-4 rounded shadow-sm">
-                {/* Song Title */}
+                
                 <div className="mb-3">
                     <label htmlFor="title" className="form-label">Song Title</label>
                     <input
@@ -93,7 +95,7 @@ const Update = () => {
                     {errors.title && <div className="invalid-feedback">{errors.title.message}</div>}
                 </div>
 
-                {/* Artist */}
+                
                 <div className="mb-3">
                     <label htmlFor="artist" className="form-label">Artist</label>
                     <input
@@ -107,7 +109,7 @@ const Update = () => {
                     {errors.artist && <div className="invalid-feedback">{errors.artist.message}</div>}
                 </div>
 
-                {/* Year Released */}
+                
                 <div className="mb-3">
                     <label htmlFor="yearReleased" className="form-label">Year Released</label>
                     <input
@@ -121,7 +123,7 @@ const Update = () => {
                     {errors.yearReleased && <div className="invalid-feedback">{errors.yearReleased.message}</div>}
                 </div>
 
-                {/* Background */}
+                
                 <div className="mb-3">
                     <label htmlFor="background" className="form-label">Background</label>
                     <textarea
@@ -135,7 +137,7 @@ const Update = () => {
                     {errors.background && <div className="invalid-feedback">{errors.background.message}</div>}
                 </div>
 
-                {/* Link */}
+                
                 <div className="mb-3">
                     <label htmlFor="link" className="form-label">Link</label>
                     <input
@@ -149,7 +151,7 @@ const Update = () => {
                     {errors.link && <div className="invalid-feedback">{errors.link.message}</div>}
                 </div>
 
-                {/* Submit Button */}
+                
                 <div className="d-flex justify-content-end">
                     <button type="submit" className="btn btn-success">Update Post</button>
                 </div>

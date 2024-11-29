@@ -42,12 +42,12 @@ const Register = (props) => {
             <form onSubmit={submitHandler} className="register-center">
                 <h1>Register</h1>
                 <div>
-                    <label>Username</label>
-                    <input type="text" onChange={(e) => setUsername(e.target.value)} />
-                </div>
-                <div>
                     <label>Email</label>
                     <input type="email" onChange={(e) => setEmail(e.target.value)} />
+                </div>
+                <div>
+                    <label>Username</label>
+                    <input type="text" onChange={(e) => setUsername(e.target.value)} />
                 </div>
                 <div>
                     <label>Password</label>

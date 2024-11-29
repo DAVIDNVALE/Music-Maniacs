@@ -39,18 +39,20 @@ const Details = (props) => {
 
     return (
         <div className="container mt-5">
-            {/* Navbar */}
-            <nav className="navbar navbar-expand-lg navbar-light bg-light mb-4">
-                <div className="container-fluid">
-                    <Link to="/home" className="btn btn-primary me-2">Home</Link>
-                    <h1 className="navbar-brand">Music Maniac {user.username}</h1>
-                    <button className="btn btn-danger">
-                        <Link to="/" onClick={logout} className="text-white text-decoration-none">Logout</Link>
+            
+            <nav className="navbar">
+                <div className="navbar-content">
+                    <button className="add-post-button">
+                        <Link to={'/home'} className="link">Home</Link>
+                    </button>
+                    <h1 className="navbar-title">Music Maniac {user.username}</h1>
+                    <button className="logout-button" onClick={logout}>
+                        Logout
                     </button>
                 </div>
             </nav>
 
-            {/* Song Details */}
+            
             <div className="card shadow-sm">
                 <div className="card-body">
                     <h2 className="card-title text-center">{song.title}</h2>
@@ -60,7 +62,7 @@ const Details = (props) => {
                 </div>
             </div>
 
-            {/* Delete Button */}
+            
             <div className="d-flex justify-content-center mt-4">
                 <button className="btn btn-danger" onClick={() => deleteSong(song._id)}>Delete Post</button>
             </div>
