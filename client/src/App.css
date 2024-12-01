@@ -86,7 +86,7 @@ a {
 .login-nav {
   display: flex;
   justify-content: space-between;
-  background: linear-gradient(135deg, #5384bc, #ddf602); 
+  background: linear-gradient(115deg, #5384bc, #ddf602, rgb(228, 3, 3)); 
   border-radius: 8px;
   align-items: center;
   margin-bottom: 30px;

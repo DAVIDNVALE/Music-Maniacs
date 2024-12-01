@@ -42,7 +42,7 @@ const Home = () => {
                 </div>
             </nav>
 
-            <h2 className="posts-heading">Maniac's Posts</h2>
+            <h2 className="posts-heading">Maniacs' Posts</h2>
 
             <div className="songs-container">
                 {songs.map((song) => (
